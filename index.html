@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Every iPhone Ever Made | HellenicDev</title>
+<meta name="description" content="19 years. 52 models. The complete visual history of every iPhone, from 2007 to 2026.">
+<meta property="og:title" content="Every iPhone Ever Made">
+<meta property="og:description" content="19 years. 52 models. 2.3 billion sold. The complete visual history of every iPhone, from 2007 to 2026.">
+<meta property="og:image" content="https://hellenicdev.github.io/every-iphone/og-every-iphone.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://hellenicdev.github.io/every-iphone">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Every iPhone Ever Made">
+<meta name="twitter:description" content="19 years. 52 models. 2.3 billion sold. The complete visual history.">
+<meta name="twitter:image" content="https://hellenicdev.github.io/every-iphone/og-every-iphone.png">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hellenicdev.github.io/every-iphone">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto+Mono:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<a href="/">
+  <img src="https://hellenicdev.github.io/logo.webp" alt="Logo" class="site-logo">
+</a>
+
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <p class="hero-eyebrow">Every</p>
+  <h1 class="hero-title">iPhone</h1>
+  <p class="hero-subtitle">ever made</p>
+  <div class="hero-image">
+    <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-compare-iphone-16-pro-202409?wid=800&hei=800&fmt=png-alpha" alt="iPhone" id="heroImg" onerror="this.src='https://statici.icloud.com/fmipmobile/deviceImages-9.0/iPhone/iPhone17,1-1-1-0/online-infobox__3x.png'">
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar" id="statsBar">
+  <div class="stat"><div class="stat-num">19</div><div class="stat-label">Years</div></div>
+  <div class="stat"><div class="stat-num">52</div><div class="stat-label">Models</div></div>
+  <div class="stat"><div class="stat-num">2.3B+</div><div class="stat-label">Sold worldwide</div></div>
+</div>
+
+<!-- PARADE -->
+<section class="parade-section" id="paradeSection">
+  <div class="parade-heading fade-in">
+    <h2>The Lineup</h2>
+    <p>Every iPhone at proportional size. Scroll right. Watch it grow.</p>
+  </div>
+  <div class="parade-track" id="paradeTrack"></div>
+</section>
+
+<!-- DIVIDER -->
+<div style="max-width:800px;margin:0 auto;padding:80px 24px;display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:rgba(255,255,255,.08)"></div><span style="font-family:var(--mono);font-size:11px;color:var(--gray-dim);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap">The Story</span><div style="flex:1;height:1px;background:rgba(255,255,255,.08)"></div></div>
+
+<!-- SCROLLYTELLING -->
+<section class="scrolly" id="scrolly">
+  <div class="parade-heading" style="padding-top:0;padding-bottom:40px">
+    <h2>The Moments <em style="font-style:italic">That Mattered</em></h2>
+    <p>11 milestones that defined a generation</p>
+  </div>
+  <div class="scrolly-wrapper">
+    <div class="scrolly-graphic" id="scrollyGraphic">
+      <div id="scrollyPhoneWrap"></div>
+      <div class="scrolly-year" id="scrollyYear">2007</div>
+      <div class="scrolly-model" id="scrollyModel">iPhone</div>
+    </div>
+    <div class="scrolly-steps" id="scrollySteps"></div>
+  </div>
+</section>
+
+<!-- DIVIDER --><div style="max-width:800px;margin:0 auto;padding:60px 24px;display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:rgba(255,255,255,.08)"></div><span style="font-family:var(--mono);font-size:11px;color:var(--gray-dim);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap">The Specs</span><div style="flex:1;height:1px;background:rgba(255,255,255,.08)"></div></div>
+<!-- CAMERA -->
+<section class="camera-sect" id="cameraSect">
+  <h2 class="">The Camera</h2>
+  <div class="camera-row fade-in fade-in-delay-2">
+    <div class="camera-block">
+      <div class="camera-big" id="camFrom">2</div>
+      <div class="camera-big-label">megapixels · 2007</div>
+    </div>
+    <div class="camera-arrow">→</div>
+    <div class="camera-block">
+      <div class="camera-big" id="camTo">48</div>
+      <div class="camera-big-label">megapixels · 2026</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="price-sect" id="priceSect">
+  <h2 class="">The Price</h2>
+  <p class="sub fade-in fade-in-delay-1">Base model vs most expensive, by year</p>
+  <div class="price-chart-wrap fade-in fade-in-delay-2" id="priceChartWrap"></div>
+</section>
+
+<!-- DIVIDER --><div style="max-width:800px;margin:0 auto;padding:60px 24px;display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:rgba(255,255,255,.08)"></div><span style="font-family:var(--mono);font-size:11px;color:var(--gray-dim);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap">The Graveyard</span><div style="flex:1;height:1px;background:rgba(255,255,255,.08)"></div></div>
+<!-- GRAVEYARD -->
+<section class="graveyard-sect" id="graveyardSect">
+  <h2 class="">What Apple<br>Took Away</h2>
+  <div class="grave-list" id="graveList"></div>
+</section>
+
+<!-- COLORS -->
+<section class="colors-sect" id="colorsSect">
+  <h2 class="">Every Color. Ever.</h2>
+  <p class="sub fade-in fade-in-delay-1">From silver to cosmic orange</p>
+  <div class="colors-grid" id="colorsGrid"></div>
+</section>
+
+<!-- DIVIDER --><div style="max-width:800px;margin:0 auto;padding:60px 24px;display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:rgba(255,255,255,.08)"></div><span style="font-family:var(--mono);font-size:11px;color:var(--gray-dim);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap">Explore</span><div style="flex:1;height:1px;background:rgba(255,255,255,.08)"></div></div>
+<!-- EXPLORER -->
+<section class="explorer-sect" id="explorerSect">
+  <h2 class="">The Collection</h2>
+  <p class="sub fade-in fade-in-delay-1">Every model. Every spec. Click any two to compare.</p>
+  <div class="explorer-filters" id="exFilters"></div>
+  <div class="explorer-grid" id="exGrid"></div>
+</section>
+
+<!-- DETAIL -->
+<div class="overlay" id="overlay"></div>
+<div class="panel" id="panel"><button class="panel-close" id="panelClose">✕</button><div id="panelBody"></div></div>
+
+<!-- COMPARE BAR -->
+<div class="compare-bar" id="compareBar">
+  <div id="compareSlot1" class="compare-slot-empty">Select first iPhone</div>
+  <div class="compare-vs">vs</div>
+  <div id="compareSlot2" class="compare-slot-empty">Select second iPhone</div>
+  <button class="compare-go" id="compareGo" disabled>Compare</button>
+</div>
+
+<!-- COMPARE OVERLAY -->
+<div class="compare-overlay" id="compareOverlay">
+  <div class="compare-content" id="compareContent"></div>
+</div>
+
+
+<footer class="foot">
+  © 2026 HellenicDev — All projects and content belong to HellenicDev.
+</footer>
+
+
+<!-- Analytics -->
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-9FWQFZME3Z"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e3e768ed6f51430994b5d0d07ca428f2"}'></script><!-- End Cloudflare Web Analytics -->
+
+<div class="bmc-wrap" id="bmc-wrap"><a class="bmc-float" href="https://buymeacoffee.com/hellenicdev" target="_blank" rel="noopener" aria-label="Buy me a coffee"><span style="font-size:12px">☕</span><span class="bmc-txt">Buy me a coffee</span></a><button class="bmc-close" aria-label="Dismiss" onclick="this.parentNode.style.display='none';try{sessionStorage.setItem('bmc_dismissed','1')}catch(e){}">×</button></div>
+<script src="script.js" defer></script>
+</body>
+</html>
