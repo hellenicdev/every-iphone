@@ -799,5 +799,3 @@ if(savedEmail){
    still capture 78% of signups without the user-hostile interrupt.) */
 
 try{if(sessionStorage.getItem('bmc_dismissed')==='1'){var w=document.getElementById('bmc-wrap');if(w)w.style.display='none'}}catch(e){}
-
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-9FWQFZME3Z');
