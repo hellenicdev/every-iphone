@@ -396,3 +396,5 @@ img{display:block;max-width:100%}
   height: auto;
   z-index: 9999;     /* stays above everything */
 }
+.ex-card:focus-visible,button:focus-visible,a:focus-visible,.filter-pill:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
