@@ -427,6 +427,14 @@ function buildExplorer(){
   });
   renderCards('all');
 }
+// Let keyboard users open a card with Enter or Space, like a button.
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Enter'&&e.key!==' ')return;
+  const card=e.target.closest&&e.target.closest('.ex-card');
+  if(!card||e.target!==card)return;
+  e.preventDefault();
+  card.click();
+});
 function renderCards(cat){
   const grid=document.getElementById('exGrid');
   const list=cat==='all'?P:P.filter(p=>cat==='se'?(p.cat==='se'||p.cat==='budget'):p.cat===cat);
@@ -434,7 +442,7 @@ function renderCards(cat){
     const cl=p.cat==='pro_max'?'Pro Max':p.cat==='se'?'SE':p.cat.charAt(0).toUpperCase()+p.cat.slice(1);
     const imgUrl=IMG[p.m];
     const imgHTML=imgUrl?`<div class="ex-card-img"><img src="${imgUrl}" alt="${p.m}" loading="lazy" onerror="this.parentElement.style.display='none'"></div>`:'';
-    return`<div class="ex-card" data-i="${P.indexOf(p)}"><span class="ex-badge">${cl}</span>${imgHTML}<div class="ex-card-model">${p.m}</div><div class="ex-card-year">${p.y} · ${p.proc}</div><div class="ex-card-specs"><div><div class="ex-spec-val">${p.s}"</div><div class="ex-spec-lbl">Screen</div></div><div><div class="ex-spec-val">${p.cm} MP</div><div class="ex-spec-lbl">Camera</div></div><div><div class="ex-spec-val">$${p.p}</div><div class="ex-spec-lbl">Price</div></div><div><div class="ex-spec-val">${p.bat||'—'}</div><div class="ex-spec-lbl">mAh</div></div></div><div class="ex-card-colors">${p.c.map(c=>`<div class="ex-card-dot" style="background:${CH[c]||'#888'}"></div>`).join('')}</div></div>`}).join('');
+    return`<div class="ex-card" data-i="${P.indexOf(p)}" tabindex="0" role="button" aria-label="${p.m} (${p.y}): view details"><span class="ex-badge">${cl}</span>${imgHTML}<div class="ex-card-model">${p.m}</div><div class="ex-card-year">${p.y} · ${p.proc}</div><div class="ex-card-specs"><div><div class="ex-spec-val">${p.s}"</div><div class="ex-spec-lbl">Screen</div></div><div><div class="ex-spec-val">${p.cm} MP</div><div class="ex-spec-lbl">Camera</div></div><div><div class="ex-spec-val">$${p.p}</div><div class="ex-spec-lbl">Price</div></div><div><div class="ex-spec-val">${p.bat||'—'}</div><div class="ex-spec-lbl">mAh</div></div></div><div class="ex-card-colors">${p.c.map(c=>`<div class="ex-card-dot" style="background:${CH[c]||'#888'}"></div>`).join('')}</div></div>`}).join('');
 }
 
 /* ── Detail panel ── */
